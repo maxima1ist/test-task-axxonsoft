@@ -48,7 +48,6 @@ int main()
     std::cout << traversing_directory("./tests/test2") << '\n';
     std::cout << traversing_directory("./tests/test3") << '\n';
     std::cout << traversing_directory("./tests/test4") << '\n';
-    std::cout << traversing_directory("./tests/test5") << '\n';
 
     return 0;
 }
