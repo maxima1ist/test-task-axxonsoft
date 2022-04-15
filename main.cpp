@@ -23,7 +23,7 @@ size_t count_lines_in_file(const std::string& path)
 
 size_t traversing_directory(const fs::path& directory_path)
 {
-    boost::asio::thread_pool thread_pool(4);
+    boost::asio::thread_pool thread_pool(std::thread::hardware_concurrency());
 
     std::atomic_size_t total_number = 0;
     for (const auto& entry : fs::recursive_directory_iterator(directory_path))
@@ -45,6 +45,10 @@ size_t traversing_directory(const fs::path& directory_path)
 int main()
 {
     std::cout << traversing_directory("./tests/test1") << '\n';
+    std::cout << traversing_directory("./tests/test2") << '\n';
+    std::cout << traversing_directory("./tests/test3") << '\n';
+    std::cout << traversing_directory("./tests/test4") << '\n';
+    std::cout << traversing_directory("./tests/test5") << '\n';
 
     return 0;
 }
