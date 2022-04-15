@@ -1,4 +1,4 @@
 #!/bin/bash
 
-g++ --std=c++17 main.cpp -o linecounter
+g++ main.cpp -std=c++17 -lpthread -lboost_system -o linecounter
 ./linecounter
