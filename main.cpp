@@ -44,10 +44,9 @@ size_t traversing_directory(const fs::path& directory_path)
 
 int main()
 {
+    std::cout << traversing_directory("./tests/test0") << '\n';
     std::cout << traversing_directory("./tests/test1") << '\n';
     std::cout << traversing_directory("./tests/test2") << '\n';
-    std::cout << traversing_directory("./tests/test3") << '\n';
-    std::cout << traversing_directory("./tests/test4") << '\n';
 
     return 0;
 }
