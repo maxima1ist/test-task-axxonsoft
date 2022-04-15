@@ -14,7 +14,7 @@ This repository was created to perform a test task as part of the selection stag
 To build the command line application just run 'build.sh' file.  
 To run application use proposed interface:  
 ```
-linecounter <path-to-a-directory>
+./linecounter <path-to-a-directory>
 ```
 
 ### Test
