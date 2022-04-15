@@ -3,6 +3,8 @@
 #include <atomic>
 #include <fstream>
 
+#include <boost/asio.hpp>
+
 namespace io = boost::asio;
 
 namespace
